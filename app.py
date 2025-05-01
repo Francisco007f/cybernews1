@@ -247,7 +247,7 @@ tab1, tab2, tab3 = st.tabs(["News", "Glossary", "Tools"])
 
 # News tab
 with tab1:
-    st.markdown("<h2>Recent Cybersecurity Attacks (2025)</h2>", unsafe_allow_html=True)
+    st.markdown("<h2>Recent Cybersecurity News (2025)</h2>", unsafe_allow_html=True)
     # Generate a cache buster that changes every 10 minutes
     cache_buster = int(time.time() // 600)
     news = fetch_cybersecurity_news(cache_buster)
